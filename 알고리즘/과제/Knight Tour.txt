@@ -1,0 +1,44 @@
+Knight Tour는 체스 게임에서 나이트의 움직임으로 갔던곳을 재방문하지 않고 체스판의 모든 칸을 방문하는 문제입니다.
+Closed Knight's Tour : 나이트가 모든 칸을 방문하고 출발점으로 다시 돌아오는 경로.
+Open Kight's Tour : 나이트가 모든 칸을 방문하지만 출발점으로 돌아오지 않는 경로.
+
+백트래킹을 사용해서 중간에 막히면 막히지 않았던 곳으로 되돌아와 다시 탐색한다.
+Warnsdorf의 규칙: 나이트는 항상 이동할 수 있는 경로중에서 가장 적은 이동가능 경로를 가진 칸으로 이동해야합니다.
+
+
+
+
+
+
+시작지점 선택
+int chessBoard[8][8];
+
+void back( ){
+	if(모든 체스판을 다 돌았다면)return;
+	else{
+		현재위치 chessBoard에서 미방문으로 바꾸고
+		전 단계로 돌아가기
+		recursion();
+	}
+}
+void recursion( ){
+	if(다음으로 갈곳이 없다면)back( );    
+	else{
+		막히지 않을 때 까지 다음 지점으로 가능한 칸으로 이동하면서 방문한 기록을 남긴다.
+		recursion();
+	}    
+
+}
+
+void main(){
+	chessBoard[8][8] = 0;
+	recursion();
+}
+선택정렬
+n
+삽입정렬
+logn
+퀵정렬
+합병정렬
+힙정렬
+RadixSort

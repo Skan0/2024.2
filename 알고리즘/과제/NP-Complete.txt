@@ -1,0 +1,216 @@
+모든 NP문제가 문제 A로 다항식 시간에 변환이 가능하다면 문제 A는 NP하드 문제이다.
+
+SAT(Satisfiability) : 충족 가능성 문제
+- 어떠한 변수들로 이루어진 논리식이 주어졌을 때 논리식이 참이 되는 변수값이 존재하는지를 찾는 문제이다. 
+하위 분류
+- Boolean Satisfiability Probelm
+- 3-SAT
+- k-SAT
+실생활
+- 하드웨어 및 소프트웨어 버그 탐지 및 검증
+- 암호학 및 보안
+- 인공지능 및 계획 문제
+근사 알고리즘
+- GSAT(Greedy SAT)
+- WalkSAT
+- DPLL(Davis Putnam Logemann Loveland)알고리즘
+
+
+여행자 문제 : TSP(Traveling Salesman Poblem)
+하위 분류
+- 대칭 여행자 문제 : 두 도시간 거리가 동일할 때
+- 비대칭 여행자 문제 : 두 도시간 거리가 다를 때
+실생활
+- 물류 및 배달 경로 
+- 여행 계획 
+- 반도체 칩설계
+근사 알고리즘
+- Nearest Neighbor Heuristic
+- Christofides Algorithm
+- 2-opt, 3-opt Heuristics
+
+
+부분집합의 합: SSP(Subset Sum Problem)
+하위 분류
+- 결정적 부분집합의 합 문제
+- 최적 부분집합의 합 문제
+실생활
+- 금융 포트폴리오 구성
+- 배낭문제와 유사한 자원 배분 문제
+- 프로젝트 비용계획
+근사 알고리즘
+- Dynamic Programming Approach
+- Greedy Approximation
+- Meet in the Middle Algorithm
+
+
+분할: Partition Problem
+하위 분류
+- 결정적 분할 문제
+- 최적 분할 문제
+실생활
+- 작업 스케줄링 및 부하 분산
+- 균등한 자원 배분
+- 데이터 클러스터링
+근사 알고리즘
+- Dynamic Programming Approach
+- Greedy Heuristic
+- Karmarkar Karp Algorithm
+
+
+배낭 문제: Knapsack Problem
+하위 분류
+- 배낭 문제
+- 분수 배낭 문제
+실생활
+- 투자 포트폴리오 구성
+- 물류 및 배달 최적화
+- 광고 배치 최적화
+근사 알고리즘
+- Dynamic Programming Approach
+- Greedy Algorithm (Fractional Knapsack)
+- Fully Polynomial Time Approximation Scheme
+
+
+독립 집합: Independent Set Problem
+하위 분류
+- 최대 독립 집합 문제
+- 최소 독립 집합 문제
+실생활
+- 통신 네트워크
+- 컴퓨터 비전 및 이미지 처리
+- 소셜 네트워크 분석
+근사 알고리즘
+- Greedy Algorithm
+- Branch and Bound Algorithm
+- Dynamic Programming (Limited Cases)
+
+
+클리크: Clique Problem
+하위 분류
+- 최대 클리크 문제
+- k-클리크 문제
+실생활
+- 소셜 네트워크 분석
+- 커뮤니티
+- VLSL 설계
+근사 알고리즘
+- Bron-Kerbosch
+- Greedy Heuristic
+- Branch and Bound 알고리즘
+
+
+정점 커버: Vertex Cover Problem
+하위 분류
+- 최소 정점 커버 문제
+- k-정점 커버 문제
+실생활
+- 컴퓨터 네트워크
+- 자원 할당 문제
+- 교통 문제
+근사 알고리즘
+- 2-Approximation Algorithm
+- Greedy Algorithm
+- Linear Programming Relaxation
+
+
+그래프 색칠하기: Graph Coloring Problem
+하위 분류
+- 최소 색상 문제
+- k-색칠 문제
+실생활
+- 스케줄링 문제
+- 통신 네트워크
+- 회로 배선 설계
+근사 알고리즘
+- Greedy Algorithm
+- Backtracking Algorithm
+- Welsh-Powell Algorithm
+
+
+집합 커버: Set Cover Problem
+하위 분류
+- 최소 집합 커버 문제
+- 근사 집합 커버 문제
+실생활
+- 자원 할당 문제
+- 이벤트 일정 조정
+- 통신 네트워크 설계
+근사 알고리즘
+- 그리디 알고리즘
+- Linear Programming
+- Integer Programming
+
+
+헤밀토니안 사이클: Hamiltonian Cycle Problem
+하위 분류
+- 헤밀토니안 경로 문제
+- 최소 비용 헤밀토니안 사이클 문제
+실생활
+- 로지스틱스 및 물류
+- 회로 설계
+- 도로 네트워크
+근사 알고리즘
+- 브루트 포스
+- 백트래킹
+- 동적 계획법
+
+
+통 채우기: Bin Packing Problem
+하위 분류
+- 최소 통개수 문제
+- 1차원 통채우기
+실생활
+- 물류 및 창고 관리
+- 배송 및 트럭 최적화
+- 컴퓨터 메모리 관리
+근사 알고리즘
+- First Fit
+- Best Fit
+- Worst Fit
+
+
+작업 스케줄링: Job Scheduling Problem
+하위 분류
+- 단일 머신 작업 스케줄링
+- 다중 머신 작업 스케줄링
+- 우선순위  작업 스케줄링
+- 최소화 스케줄링
+실생활
+- CPU 작업 스케줄링
+- 공장 및 제조업 생산 스케줄링
+- 프로젝트 관리 및 업무 배정
+근사 알고리즘
+- 최소 마감 시간 우선
+- 최단 작업 시간 우선
+- 우선순위 기반 스케줄링
+
+
+최장 경로: Longest Path Problem
+하위 분류
+- 단일 시작점 최장 경로
+- 최장 경로 문제(가중치, 비가중치, 방향, 무방향)
+실생활
+- 최대 이동 경로 찾기
+- 게임 개발
+- 도로 및 교통망 분석
+근사 알고리즘
+- 동적 계획법
+- 깊이우선탐색
+- 다익스트라 알고리즘
+
+
+클러스터링: Clustering Problem
+하위 분류
+- k-평균 클러스터링
+- 계층적 클러스터링
+- 스펙트럴 클러스터링
+- 분포 기반 클러스터링
+실생활
+- 고객 세분화
+- 이미지 및 텍스트 데이터 분류
+- 추천 시스템
+근사 알고리즘
+- 계층적 클러스터링
+- 근사 알고리즘
+- 스펙트럴 클러스터링

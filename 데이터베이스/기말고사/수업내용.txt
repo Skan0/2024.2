@@ -159,9 +159,34 @@ realation 여러개의 튜플들의 합
 pi empname salary(employee)
 pi empname title salary(시그마salary>2700000(employee))
 pi title(시그마empname = 조민희(EMPLOYEE))
-	이항 연산자
-		합집합
-		차집합
-		곱집합/cartition project	
+	이항 연산자 
+		합집합 U
+		차집합 -
+		곱집합 X /Cartesian product -> 행렬의 곱셈과 같은 형식으로 이루어진다. 
 
+조인 연산 -> 카티션 프로덕트를 하고 셀렉션을 한 것
+디비젼 연산 -> 나누기, 잘 안씀
+집단 함수와 그룹화연산
+외부조인과 외부 합집합
+
+산술연산이 없다.
+집단함수가 없다.
+정렬이 없다.
+갱신연산이 없다.
+무조건적인 중복배제
+
+이항연산자 호환성을 맞춰줘야한다.
+스키마가 동일한 두 표에 대해서만 집합 연산이 가능하다.
+합집합 연산은 항상 가능한게 아니고 각각의 집합이 다루고 있는 바가 같아야 합집합을 수행할 수 있다.
+도메인 제약조건에서 모든 속성은 영역에 해당하는 속성만 가져야한다.
+
+파이 DNO (시그마EMPNAME = 김창섭 OR EMPNAME = 최종철(EMPLOYEE)) 교집합 파이 시그마 DEPNAME = 기획(DEPARTMENT)
+파이  DEPTNO (DEPARTMENT) 차집합 파이 DNO (EMPLOYEE)
+
+관리를 위해서는 데이터가 분산되어 있지만 -> NULL이 발생하고 중복이 발생하는것을 막기위해서
+내가 찾을 때는 CARTESIAN PRODUCT를 사용해서 데이터들을 합쳐서 찾아서 사용한다.
+파이 ENAME(시그마 DNO = DEPNO(EMP 카티션프로덕트 DEPT))
+
+파이 NAME, EMPNO(시그마 TITLE = 대리 AND SALARY >= 3000(EMP))
+파이 DEPTNAME((시그마 NAME = 김영식(EMP)X DEPT))
 유도된 연산자

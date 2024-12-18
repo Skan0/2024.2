@@ -1,4 +1,4 @@
-2024-11-14
+562024-11-14
 데이터 그룹화가 잘못되었을 때의 문제점
 데이터 갱신에 문제가 생길 수 있다.
 속성에 null이 들어있을 수 있다.
@@ -190,3 +190,14 @@ pi title(시그마empname = 조민희(EMPLOYEE))
 파이 NAME, EMPNO(시그마 TITLE = 대리 AND SALARY >= 3000(EMP))
 파이 DEPTNAME((시그마 NAME = 김영식(EMP)X DEPT))
 유도된 연산자
+
+
+DELETE 	FROM DEPARTMENT
+WHERE 	DEPTNO = 4
+
+UPDATE 	EMPLOYEE
+SET 		DNO = 3, SALARY = SALARY * 1.05
+WHERE 	EMPNO = 2106
+
+SUPERVISOR = ㅠSSSN,NAME,SUPERSSSN(EMPLOYEE)
+ㅠNAME(0SSSN = SUPERVISOR(EMPLOYEE))
